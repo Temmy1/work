@@ -1,0 +1,82 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px
+  min-width: 320px;
+}
+
+/*Header*/
+
+.header-top {
+  /*background: url(image/rombs.png);*/
+  padding: 15px 0;
+}
+/*Секция выбора панелей*/
+.my_goods {
+  padding: 40px 0;
+  background-color: #f6f6f6;
+}
+.block {
+
+
+}
+
+/*Секция преимущества*/
+.preferences {
+  padding: 30px 0;
+}
+.pref:hover {
+  background-color: #f3f3f3;
+}
+
+
+.my_icon {
+  height: 50px;
+  width: 50px;
+  background: rgba(255,0,0,.7);
+  border-radius: 50%;
+}
+.badge {
+  border-radius: 50%;
+  background-color: rgba(128,128,128, .5);
+}
+
+/*Компания*/
+.my_company {
+  padding: 110px 0 60px 0;
+  color: #fff;
+  background: url(image/company.jpg);
+  background-size: cover;
+}
+.achieve {
+  margin-top: 20px;
+}
+
+/*Новости*/
+.my_news {
+  padding: 60px 0;
+}
+
+/*Портфолио*/
+.my_portfolio {
+
+}
+.description {
+  background: #2053f7;
+  color: #fff;
+  padding: 5% 2rem!important;
+}
+
+/*Форма*/
+.my_form {
+  padding: 40px 0;
+}
+
+/*Footer**/
+.my_footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 0;
+}
+.nav-link:first-child {
+  padding-top: 0;
+}
