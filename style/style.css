@@ -10,35 +10,40 @@ body {
   /*background: url(image/rombs.png);*/
   padding: 15px 0;
 }
+.header-nav a {
+  color: rgba(0,0,0, .8);
+
+}
+.header-nav a:hover {
+  color: rgba(0,0,0, .5);
+}
+.header-nav a:active {
+  color: rgba(0,0,0, .9);
+}
+
+/*Карусель*/
+.carousel-text h5{
+  color: #000;
+}
 /*Секция выбора панелей*/
 .my_goods {
   padding: 40px 0;
   background-color: #f6f6f6;
 }
-.block {
 
-
-}
 
 /*Секция преимущества*/
 .preferences {
   padding: 30px 0;
+}
+.pref {
+  padding: 1rem;
 }
 .pref:hover {
   background-color: #f3f3f3;
 }
 
 
-.my_icon {
-  height: 50px;
-  width: 50px;
-  background: rgba(255,0,0,.7);
-  border-radius: 50%;
-}
-.badge {
-  border-radius: 50%;
-  background-color: rgba(128,128,128, .5);
-}
 
 /*Компания*/
 .my_company {
@@ -50,7 +55,12 @@ body {
 .achieve {
   margin-top: 20px;
 }
-
+.achieve-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(128,128,128, .5);
+}
 /*Новости*/
 .my_news {
   padding: 60px 0;
@@ -77,6 +87,12 @@ body {
   color: #fff;
   padding: 40px 0;
 }
-.nav-link:first-child {
+.footer-nav a {
+  color: #fff;
+}
+.footer-nav a:hover {
+  color: #808080;
+}
+.footer-nav a:first-child {
   padding-top: 0;
 }
