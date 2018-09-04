@@ -7,8 +7,47 @@ body {
 /*Header*/
 
 .header-top {
-  /*background: url(image/rombs.png);*/
-  padding: 15px 0;
+  /*background: url(image/rombs.png);
+  background-repeat:repeat-x;
+  background-size: cover;*/
+  background-image:
+
+
+        linear-gradient(to top right, transparent 40.5%, blue 25%),
+        linear-gradient(to top left, transparent 40.5%, blue 25%);
+background-repeat:   repeat-x, repeat-x;
+background-position:  20px 100%, 20px 100%;
+background-size:  15px 26px, 15px 26px;
+background-clip:  border-box, border-box;
+background-origin:  border-box, border-box;
+}
+.search-container {
+  position: relative;
+  width: 100%;
+}
+.search-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+input[type=search] {
+    /*width: 130px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;*/
+    text-indent: 30px;
+    /*-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;*/
+
+}
+input[type=search]:focus {
+    /*transform: scaleX(1.2);
+    width: 100%;*/
 }
 .header-nav a {
   color: rgba(0,0,0, .8);
