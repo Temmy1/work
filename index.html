@@ -11,17 +11,17 @@
     <title>КМК</title>
   </head>
   <body>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalOrder">
-      Запустить модальное окно
-    </button>
+    <a id="button"><i class="fas fa-arrow-up fa-2x"></i></a>
     <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrder" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="container">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalOrder">Оставить заявку</h5>
-              <p class="modal-text text-muted">Заполните форму и в ближайшее время с вами свяжется
-                менеджер для уточнения деталей покупки</p>
+              <div class="modal-header-text">
+                <h5 class="modal-title mb-4" id="modalOrder">Оставить заявку</h5>
+                <p class="modal-text text-muted">Заполните форму и в ближайшее время с вами свяжется
+                  менеджер для уточнения деталей покупки</p>
+              </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -33,16 +33,16 @@
                     <label for="inputNameModal">Имя *</label>
                     <input type="text" class="form-control" id="inputNameModal" placeholder="Имя">
                   </div>
-                  <div class="form-group col-6">
-                    <label for="inputMailModal" class="№">Укажите желаемый вид связи *</label>
+                  <div class="form-group col-12 connect-bar">
+                    <label for="inputMailModal">Укажите желаемый вид связи *</label>
                     <input type="email" class="form-control" id="inputMailModal" placeholder="E-mail">
                   </div>
-                  <div class="form-group col-6">
+                  <div class="form-group col-12">
                     <label for="inputTelModal" class="sr-only">Ваш телефон</label>
                     <input type="tel" class="form-control" id="inputTelModal" placeholder="Телефон:">
                   </div>
                   <div class="form-group col-12">
-                    <label for="inputIntrestModal" class="№">Оставить комментарий</label>
+                    <label for="inputIntrestModal">Оставить комментарий</label>
                     <textarea class="form-control" id="inputIntrestModal" rows="3" placeholder=""></textarea>
                   </div>
                 </div>
@@ -53,8 +53,10 @@
               на обработку моих персональных данных, в соответствие с Федеральным законом от 27.07.2006 года
               <a href="#">№152-ФЗ "О персональных данных"</a>, на условиях и для целей,
               определенных Политикой конфеденциальности.</p>
-              <button type="button" class="btn btn-primary">Отправить</button>
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Отменить</button>
+              <div class="modal-footer-btn">
+                <button type="button" class="btn btn-blue">Отправить</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Отменить</button>
+              </div>
             </div>
           </div>
         </div>
@@ -66,15 +68,14 @@
       <div class="container">
         <div class="row justify-content-between ">
           <div class="col-md-12 col-lg-6 phone ">
-            <p class="d-inline-block" ><span class="fas fas fa-phone fa-fw" data-fa-transform="rotate-90"></span> +7 (900) 555-00-33</p>
-            <p class="d-inline-block">Заказать звонок</p>
+            <p class="d-inline-block font-weight-bold mr-2" ><span class="fas fas fa-phone fa-fw" data-fa-transform="rotate-90"></span> +7 (900) 555-00-33</p>
+            <p class="d-inline-block font-weight-bold text-primary">Заказать звонок</p>
           </div>
 
           <form class="form-inline" action="#">
             <div class="search-container">
               <span class="fas fa-search search-icon"></span>
               <input class="form-control form-control-sm" type="search" placeholder="Поиск" aria-label="Search">
-            <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
             </div>
           </form>
 
@@ -148,17 +149,17 @@
         <div class="row">
 
           <div class="col-12 mb-4">
-            <h4 class="text-center ">Выбор сэндвич панели</h4>
+            <h2 class="text-center font-weight-bold">Выбор сэндвич панели</h2>
           </div>
 
           <div class="col-lg-3 col-md-6 panels">
             <div class="card mb-4">
               <img class="card-img-top" src="style/image/block1.jpg" alt="Панель1">
               <div class="card-body">
-                <h5 class="card-title">Сэндвич панель 1</h5>
+                <h5 class="card-title font-weight-bold">Сэндвич панель 1</h5>
                 <p class="card-text"><small>Толщина - 100мм</small></p>
                 <p class="card-text"> 5900 руб./м2</p>
-                <button class="btn btn-primary">Начать оформление</button>
+                <button class="btn btn-blue" data-toggle="modal" data-target="#modalOrder">Начать оформление</button>
               </div>
             </div>
           </div>
@@ -167,10 +168,10 @@
             <div class="card mb-4">
               <img class="card-img-top" src="style/image/block2.jpg" alt="Панель2">
               <div class="card-body">
-                <h5 class="card-title">Сэндвич панель 2</h5>
+                <h5 class="card-title font-weight-bold">Сэндвич панель 2</h5>
                 <p class="card-text"><small>Толщина - 150мм</small></p>
                 <p class="card-text"> 6900 руб./м2</p>
-                <button class="btn btn-primary">Начать оформление</button>
+                <button class="btn btn-blue" data-toggle="modal" data-target="#modalOrder">Начать оформление</button>
               </div>
             </div>
           </div>
@@ -179,10 +180,10 @@
             <div class="card mb-4">
               <img class="card-img-top" src="style/image/block3.jpg" alt="Панель3">
               <div class="card-body">
-                <h5 class="card-title">Сэндвич панель 3</h5>
+                <h5 class="card-title font-weight-bold">Сэндвич панель 3</h5>
                 <p class="card-text"><small>Толщина - 200мм</small></p>
                 <p class="card-text"> 7900 руб./м2</p>
-                <button class="btn btn-primary">Начать оформление</button>
+                <button class="btn btn-blue" data-toggle="modal" data-target="#modalOrder">Начать оформление</button>
               </div>
             </div>
           </div>
@@ -191,10 +192,10 @@
             <div class="card mb-4">
               <img class="card-img-top" src="style/image/block4.jpg" alt="Панель4">
               <div class="card-body">
-                <h5 class="card-title">Сэндвич панель 4</h5>
+                <h5 class="card-title font-weight-bold">Сэндвич панель 4</h5>
                 <p class="card-text"><small>Толщина - 250мм</small></p>
                 <p class="card-text"> 8900 руб./м2</p>
-                <button class="btn btn-primary">Начать оформление</button>
+                <button class="btn btn-blue" data-toggle="modal" data-target="#modalOrder">Начать оформление</button>
               </div>
             </div>
           </div>
@@ -232,11 +233,11 @@
       </div>
     </section>
 
-    <section class="my_company">
+    <section class="company">
       <div class="container">
         <div class="row">
           <div class="col-8 offset-2">
-            <h4 class="text-center">Компания КМК</h4>
+            <h2 class="text-center font-weight-bold">Компания КМК</h4>
             <p class="text-center">Тестовый текст. Среди наших проектов есть кампании для крупных игроков и малого бизнеса. В работе используем последние преимущества
             платформы 1С-Битрикс и стандартные технологии (AJAX, bootstrap, LESS, SCSS). Сайты на основе наших решений интуитивно понятны, а при необходимости их легко
             доработают в любой веб-студии. Среди наших проектов есть кампании для крупных игроков и малого бизнеса. В работе используем последние преимущества платформы
@@ -247,9 +248,8 @@
 
         <div class="achieve">
           <div class="row">
-        <!-- Do not know how to position-->
+
             <div class="col-6 col-lg-3">
-          <!--bg-transparent-->
               <span class="badge achieve-circle"><i class="far fa-lightbulb fa-4x" data-fa-transform="shrink-5"></i></span>
               <p class="d-inline-block">Достижение<br><small>Описание</small></p>
             </div>
@@ -274,19 +274,19 @@
       </div>
     </section>
 
-    <section class="my_news">
+    <section class="news">
       <div class="container">
         <div class="row">
 
           <div class="col-12 mb-4">
-            <h4 class="text-center ">Новости и акции</h4>
+            <h2 class="text-center font-weight-bold">Новости и акции</h4>
           </div>
 
           <div class="col-sm-6 col-lg-3">
             <div class="card mb-4">
               <img class="card-img-top" src="style/image/news1.jpg" alt="Новость">
               <div class="card-body">
-                <h5 class="card-title">Длинный заголовок новости или акции</h5>
+                <h5 class="card-title font-weight-bold">Длинный заголовок новости или акции</h5>
                 <p class="card-text text-muted"><small>25 Августа 2018 // Новости</small></p>
               </div>
             </div>
@@ -296,7 +296,7 @@
             <div class="card mb-4">
               <img class="card-img-top" src="style/image/news2.jpg" alt="Новость">
               <div class="card-body">
-                <h5 class="card-title">Длинный заголовок новости или акции</h5>
+                <h5 class="card-title font-weight-bold">Длинный заголовок новости или акции</h5>
                 <p class="card-text text-muted"><small>25 Августа 2018 // Новости</small></p>
               </div>
             </div>
@@ -306,7 +306,7 @@
             <div class="card mb-4">
               <img class="card-img-top" src="style/image/news3.jpg" alt="Новость">
               <div class="card-body">
-                <h5 class="card-title">Длинный заголовок новости или акции</h5>
+                <h5 class="card-title font-weight-bold">Длинный заголовок новости или акции</h5>
                 <p class="card-text text-muted"><small>25 Августа 2018 // Новости</small></p>
               </div>
             </div>
@@ -316,7 +316,7 @@
             <div class="card mb-4">
               <img class="card-img-top" src="style/image/news4.jpg" alt="Акция">
               <div class="card-body">
-                <h5 class="card-title">Длинный заголовок новости или акции</h5>
+                <h5 class="card-title font-weight-bold">Длинный заголовок новости или акции</h5>
                 <p class="card-text text-muted"><small>Весь год // Акция</small></p>
               </div>
             </div>
@@ -325,40 +325,27 @@
         </div>
       </div>
     </section>
-    <section class="my_portfolio">
+    <section class="portfolio">
       <div class="container-fluid px-0">
         <div class="row no-gutters">
           <div class="col-md-12 col-xl-3 description">
 
-              <h4 class="mb-4">Фотогалерея</h4>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+              <h2 class="mb-4 font-weight-bold">Фотогалерея</h4>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
                 quisquam. Perferendis voluptatum ratione iure fugiat iste mollitia
                 fuga aliquam, rerum ab veritatis. Expedita ullam omnis est quos iste
                  asperiores iusto ipsum labore, pariatur! Possimus esse non, nulla dicta totam.
                  Repellat, tenetur eius eligendi consequatur. Dolore sunt illum, autem, et omnis
                   exercitationem quas culpa eum. Harum repellendus modi iure natus, ipsum.</p>
-              <button class="btn btn-light btn-sm">Перейти в фотогалерею</button>
+              <div class="row text-center">
+                <div class="col-12">
+                  <button class="btn btn-light btn-sm">Перейти в фотогалерею</button>
+                </div>
+              </div>
+
           </div>
           <div class="col-md-12 col-xl-9" >
             <div class="row no-gutters">
-              <!--<div class="col-md-6 col-lg-4">
-                <img src="style/image/gallery6.jpg" class="img-fluid" alt="image">
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <img src="style/image/gallery4.jpg" class="img-fluid" alt="image">
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <img src="style/image/gallery2.jpg" class="img-fluid" alt="image">
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <img src="style/image/gallery5.jpg" class="img-fluid" alt="image">
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <img src="style/image/gallery3.jpg" class="img-fluid" alt="image">
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <img src="style/image/gallery1.jpg" class="img-fluid" alt="image">
-              </div>-->
               <div class="col-md-6 col-lg-4">
                 <img src="style/image/gallery6.jpg" class="d-block w-100" alt="image">
               </div>
@@ -383,11 +370,11 @@
       </div>
     </section>
 
-    <section class="my_form">
+    <section class="form">
       <div class="container">
         <div class="row">
           <div class="col-12 mb-4">
-            <h4 class="text-center">Нужна консультанция?</h4>
+            <h2 class="text-center font-weight-bold">Нужна консультанция?</h4>
           </div>
         </div>
         <form action="#">
@@ -419,7 +406,7 @@
           </div>
         <div class="form-row text-center">
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Задать вопрос</button>
+            <button type="submit" class="btn btn-blue">Задать вопрос</button>
           </div>
         </div>
 
@@ -427,7 +414,7 @@
     </div>
     </section>
 
-    <footer class="my_footer">
+    <footer class="footer">
       <div class="container">
         <div class="row align-items-start">
           <div class="col-sm-12 col-md-3">
@@ -437,12 +424,12 @@
             <p class="text-uppercase font-weight-light"><small><i class="far fa-copyright fa-fw"></i> 2018 все права защищены</small></p>
           </div>
           <div class="col-sm-12 col-md-3">
-            <h6 class="text-uppercase mb-3">Наши контакты</h6>
+            <h6 class="text-uppercase mb-3 font-weight-bold">Наши контакты</h6>
             <p><span class="fas fa-mobile-alt fa-fw"></span> +7 (900) 555 00 33</p>
             <p><span class="far fa-envelope-open fa-fw"></span> info@kmk.ru</p>
           </div>
           <div class="col-sm-12 col-md-3">
-            <h6 class="text-uppercase mb-3">Наш адрес</h5>
+            <h6 class="text-uppercase mb-3 font-weight-bold">Наш адрес</h5>
             <p><span class="fas fa-map-marked-alt fa-fw"></span>г. Москва, 2я Лыковская, 65, кор. 46</p>
           </div>
           <div class="col-sm-12 col-md-3">
@@ -458,8 +445,11 @@
       </div>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

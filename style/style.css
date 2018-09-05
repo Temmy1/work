@@ -1,10 +1,20 @@
+/* Общие */
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px
+  font-size: 14px;
+  line-height: 1.5;
   min-width: 320px;
+}
+.btn-blue {
+  background-color: #2053f7;
+  color: #fff;
+}
+.btn-blue:hover {
+  background-color: #093bde;
 }
 
 /* Модальное окно*/
+
 .modal-header h5 {
   font-family: "Open Sans";
   font-size: 24px;
@@ -16,26 +26,23 @@ body {
   font-size: 12px;
   line-height: 20px;
 }
-/*modal label {
-  font-size: 11px;
-  line-height: 30px;
-}*/
+
+.modal-footer {
+  flex-direction: column;
+}
+
 /*Header*/
 
 .header-top {
-  /*background: url(image/rombs.png);
-  background-repeat:repeat-x;
-  background-size: cover;*/
+  padding: 10px 0;
   background-image:
-
-
-        linear-gradient(to top right, transparent 40.5%, blue 25%),
-        linear-gradient(to top left, transparent 40.5%, blue 25%);
-background-repeat:   repeat-x, repeat-x;
-background-position:  20px 100%, 20px 100%;
-background-size:  15px 26px, 15px 26px;
-background-clip:  border-box, border-box;
-background-origin:  border-box, border-box;
+        linear-gradient(to top right, transparent 40.5%, #f3f3f3 25%),
+        linear-gradient(to top left, transparent 40.5%, #f3f3f3 25%);
+  background-repeat: repeat-x, repeat-x;
+  background-position: 50px 100%, 50px 100%;
+  background-size: 15px 100%, 15px 100%;
+  background-clip: padding-box, padding-box;
+  background-origin: padding-box, padding-box;
 }
 .search-container {
   position: relative;
@@ -47,45 +54,25 @@ background-origin:  border-box, border-box;
   left: 10px;
 }
 input[type=search] {
-    /*width: 130px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;*/
     text-indent: 30px;
-    /*-webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;*/
+}
 
-}
-input[type=search]:focus {
-    /*transform: scaleX(1.2);
-    width: 100%;*/
-}
 .header-nav a {
-  color: rgba(0,0,0, .8);
-
+  color: rgba(34,34,34, .8);
 }
 .header-nav a:hover {
-  color: rgba(0,0,0, .5);
+  color: rgba(34,34,34, .5);
 }
 .header-nav a:active {
-  color: rgba(0,0,0, .9);
+  color: rgba(34,34,34, .9);
 }
 
-/*Карусель*/
-/*.carousel-text h5{
-  color: #000;
-}*/
+
 /*Секция выбора панелей*/
 .my_goods {
   padding: 40px 0;
   background-color: #f6f6f6;
 }
-
 
 /*Секция преимущества*/
 .preferences {
@@ -98,10 +85,8 @@ input[type=search]:focus {
   background-color: #f3f3f3;
 }
 
-
-
 /*Компания*/
-.my_company {
+.company {
   padding: 110px 0 60px 0;
   color: #fff;
   background: url(image/company.jpg);
@@ -116,28 +101,30 @@ input[type=search]:focus {
   border-radius: 50%;
   background-color: rgba(153,155,167, .5);
 }
+
 /*Новости*/
-.my_news {
+.news {
   padding: 60px 0;
 }
 
 /*Портфолио*/
-.my_portfolio {
 
-}
 .description {
   background: #2053f7;
   color: #fff;
   padding: 5% 2rem!important;
 }
+.description button {
+  color: #2053f7;
+}
 
 /*Форма*/
-.my_form {
+.form {
   padding: 40px 0;
 }
 
 /*Footer**/
-.my_footer {
+.footer {
   background: #151515;
   color: #e0e0e0;
   padding: 40px 0;
@@ -150,4 +137,41 @@ input[type=search]:focus {
 }
 .footer-nav a:first-child {
   padding-top: 0;
+}
+
+/*Кнопка вверх*/
+#button {
+  display: inline-block;
+  background-color: #2053f7;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+.fa-arrow-up {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #093bde;
+}
+#button:active {
+  background-color: #093bde;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
