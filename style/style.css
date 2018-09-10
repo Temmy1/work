@@ -73,7 +73,9 @@ input[type=search] {
   padding: 40px 0;
   background-color: #f6f6f6;
 }
-
+.panel-btn {
+  display: none;
+}
 /*Секция преимущества*/
 .preferences {
   padding: 30px 0;
