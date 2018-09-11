@@ -56,6 +56,9 @@ body {
 input[type=search] {
     text-indent: 30px;
 }
+input[type=search]:focus {
+  width: 100%;
+}
 
 .header-nav a {
   color: rgba(34,34,34, .8);
@@ -73,8 +76,12 @@ input[type=search] {
   padding: 40px 0;
   background-color: #f6f6f6;
 }
-.panel-btn {
-  display: none;
+.panels .panel-btn {
+  opacity: 0;
+  transition: .3s ease-out;
+}
+.panels:hover .panel-btn {
+  opacity: 1;
 }
 /*Секция преимущества*/
 .preferences {

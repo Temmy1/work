@@ -15,7 +15,4 @@ $(document).ready(function(){
     return false;
   });
 
-  $("#panel1").hover(function(){
-    $(".panel-btn").toggle();
-  });
 });

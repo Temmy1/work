@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
     <title>КМК</title>
@@ -30,16 +31,16 @@
               <form class="modal-form"action="#">
                 <div class="form-row">
                   <div class="form-group col-12">
-                    <label for="inputNameModal">Имя *</label>
-                    <input type="text" class="form-control" id="inputNameModal" placeholder="Имя">
+                    <label for="inputNameModal" class="col-form-label-sm ">Имя <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-sm" id="inputNameModal" placeholder="Имя">
                   </div>
                   <div class="form-group col-12 connect-bar">
-                    <label for="inputMailModal">Укажите желаемый вид связи *</label>
-                    <input type="email" class="form-control" id="inputMailModal" placeholder="E-mail">
+                    <label for="inputMailModal" class="col-form-label-sm ">Укажите желаемый вид связи <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control col-form-label-sm" id="inputMailModal" placeholder="E-mail">
                   </div>
                   <div class="form-group col-12">
-                    <label for="inputTelModal" class="sr-only">Ваш телефон</label>
-                    <input type="tel" class="form-control" id="inputTelModal" placeholder="Телефон:">
+                    <label for="inputTelModal" class="sr-only col-form-label-sm">Ваш телефон</label>
+                    <input type="tel" class="form-control col-form-label-sm" id="inputTelModal" placeholder="Телефон:">
                   </div>
                   <div class="form-group col-12">
                     <label for="inputIntrestModal">Оставить комментарий</label>
@@ -152,14 +153,14 @@
             <h2 class="text-center font-weight-bold">Выбор сэндвич панели</h2>
           </div>
 
-          <div class="col-lg-3 col-md-6 panels" id="panel1">
+          <div class="col-lg-3 col-md-6 panels">
             <div class="card mb-4">
               <img class="card-img-top" src="style/image/block1.jpg" alt="Панель1">
               <div class="card-body">
                 <h5 class="card-title font-weight-bold">Сэндвич панель 1</h5>
                 <p class="card-text"><small>Толщина - 100мм</small></p>
                 <p class="card-text"> 5900 руб./м2</p>
-                <button class="btn btn-blue panel1-btn" data-toggle="modal" data-target="#modalOrder">Начать оформление</button>
+                <button class="btn btn-blue panel-btn" data-toggle="modal" data-target="#modalOrder">Начать оформление</button>
               </div>
             </div>
           </div>
@@ -236,7 +237,7 @@
     <section class="company">
       <div class="container">
         <div class="row">
-          <div class="col-8 offset-2">
+          <div class="col-12 col-md-8 mx-md-auto">
             <h2 class="text-center font-weight-bold">Компания КМК</h4>
             <p class="text-center">Тестовый текст. Среди наших проектов есть кампании для крупных игроков и малого бизнеса. В работе используем последние преимущества
             платформы 1С-Битрикс и стандартные технологии (AJAX, bootstrap, LESS, SCSS). Сайты на основе наших решений интуитивно понятны, а при необходимости их легко
@@ -249,23 +250,23 @@
         <div class="achieve">
           <div class="row">
 
-            <div class="col-6 col-lg-3">
+            <div class="col-5 ml-auto col-lg-3 mb-3">
               <span class="badge achieve-circle"><i class="far fa-lightbulb fa-4x" data-fa-transform="shrink-5"></i></span>
               <p class="d-inline-block">Достижение<br><small>Описание</small></p>
             </div>
 
-            <div class="col-6 col-lg-3">
+            <div class="col-5 ml-auto col-lg-3 mb-3">
               <span class="badge achieve-circle"><i class="fas fa-film fa-4x" data-fa-transform="shrink-5"></i></span>
               <p class="d-inline-block">Достижение<br><small>Описание</small></p>
             </div>
 
-            <div class="col-6 col-lg-3">
+            <div class="col-5 ml-auto col-lg-3 mb-3">
               <span class="badge achieve-circle"><i class="fas fa-bullhorn fa-4x" data-fa-transform="shrink-5"></i></span>
               <p class="d-inline-block">Достижение<br><small>Описание</small></p>
             </div>
 
-            <div class="col-6 col-lg-3">
-              <span class="badge achieve-circle"><i class="far fa-thumbs-up fa-4x" data-fa-transform="shrink-5"></i></span>
+            <div class="col-5 ml-auto col-lg-3 mb-3">
+              <span class="badge achieve-circle"><i class="far fa-thumbs-up fa-4x" data-fa-transform="shrink-4"></i></span>
               <p class="d-inline-block">Достижение<br><small>Описание</small></p>
             </div>
           </div>
@@ -381,19 +382,19 @@
           <div class="form-row">
             <div class="form-group col-4">
               <label for="inputName" class="sr-only">Имя</label>
-              <input type="text" class="form-control" id="inputName" placeholder="Имя: *">
+              <input type="text" class="form-control col-form-label-sm" id="inputName" placeholder="Имя: *">
             </div>
             <div class="form-group col-4">
               <label for="inputTel" class="sr-only">Ваш телефон</label>
-              <input type="tel" class="form-control" id="inputTel" placeholder="Ваш телефон: *">
+              <input type="tel" class="form-control col-form-label-sm" id="inputTel" placeholder="Ваш телефон: *">
             </div>
             <div class="form-group col-4">
               <label for="inputMail" class="sr-only">Ваша e-mail</label>
-              <input type="email" class="form-control" id="inputMail" placeholder="Ваш e-mail: *">
+              <input type="email" class="form-control col-form-label-sm" id="inputMail" placeholder="Ваш e-mail: *">
             </div>
             <div class="form-group col-12">
               <label for="inputIntrest" class="sr-only">Что вас интересует</label>
-              <textarea class="form-control" id="inputIntrest" rows="3" placeholder="Что вас интересует: *"></textarea>
+              <textarea class="form-control col-form-label-sm" id="inputIntrest" rows="3" placeholder="Что вас интересует: *"></textarea>
             </div>
           </div>
           <div class="form-group">

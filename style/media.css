@@ -1,0 +1,17 @@
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .achieve-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-nav a {
+    padding-left: 0;
+  }
+}
